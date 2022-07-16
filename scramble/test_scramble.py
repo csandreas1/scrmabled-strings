@@ -19,9 +19,14 @@ class TestingScramble(unittest.TestCase):
 
 
     def test_get_matches(self):
-        scramble = Scramble(['axpaj', 'apxaj', 'dnrbt', 'pjxdn', 'abd'])
+        scramble = Scramble(["axpaj", "apxaj", "dnrbt", "pjxdn", "abd"])
         matches = scramble.get_matches("aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbt")
         self.assertEqual(matches, 4)
 
-if __name__ == '__main__':
+    def test_get_matches_2(self):
+        scramble = Scramble(["axpaj", "apxaj", "dnrbt", "pjxdn", "abd", "pool"])
+        matches = scramble.get_matches("aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbtpool")
+        self.assertEqual(matches, 6)
+
+if __name__ == "__main__":
     unittest.main()
