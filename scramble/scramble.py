@@ -1,7 +1,9 @@
 import itertools
+import logging
+import logging.config
 
 class Scramble:
-	def __init__(self, dictionary: list) -> None:
+	def __init__(self, dictionary: list)-> None:
 		self.dictionary_list = dictionary
 		self.scrambles = []
 		self.matches = 0
@@ -12,6 +14,7 @@ class Scramble:
 		self.orchistrate_generated_scrambles()
 
 	def get_matches(self, longString: str)-> int:
+		self.matches = 0
 		for d in self.dictionary_list:
 			if d in longString:
 				self.matches += 1
