@@ -7,6 +7,17 @@ class TestingScramble(unittest.TestCase):
         scrambled_list = scramble.generateScrambles("this")
         self.assertEqual(scrambled_list, ["this", "tihs"])
 
+    def test_generate_scrambles_2(self):
+        scramble = Scramble()
+        scrambled_list = scramble.generateScrambles("bath")
+        self.assertEqual(scrambled_list, ["bath", "btah"])
+
+    def test_generate_scrambles_3(self):
+        scramble = Scramble()
+        scrambled_list = scramble.generateScrambles("pool")
+        self.assertEqual(scrambled_list, ["pool", "pool"])
+
+
     def test_get_matches(self):
         scramble = Scramble(['axpaj', 'apxaj', 'dnrbt', 'pjxdn', 'abd'])
         matches = scramble.get_matches("aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbt")
