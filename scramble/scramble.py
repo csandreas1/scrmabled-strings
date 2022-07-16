@@ -1,8 +1,4 @@
 import itertools
-import pprint
-
-print("running...")
-# Todo: __init__: for each dictionary append to the list its scrambled version
 
 class Scramble:
 
@@ -11,12 +7,10 @@ class Scramble:
 		self.scrambles = []
 		self.matches = 0
 
-
 		for d in self.dictionary_list:
 			self.scrambles.extend(self.generateScrambles(d))
 
 		self.orchistrate_generated_scrambles()
-		pprint.pprint(self.dictionary_list)
 
 	def get_matches(self, longString: str)-> int:
 		for d in self.dictionary_list:
@@ -37,13 +31,3 @@ class Scramble:
 		self.scrambles = list(dict.fromkeys(self.scrambles))
 		#merge scrumble list into the dictionary list
 		self.dictionary_list = itertools.chain(self.dictionary_list, self.scrambles)
-
-# dictionary_list = ['axpaj', 'apxaj', 'dnrbt', 'pjxdn', 'abd']
-
-# # r = isScramble(dictionary_list, 'aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbt')
-
-# # print(r)
-# Scramble = Scramble()
-
-# print(Scramble.generateScrambles('this'))
-# print("Completed")
