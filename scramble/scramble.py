@@ -1,7 +1,6 @@
 import itertools
 
 class Scramble:
-
 	def __init__(self, dictionary: list) -> None:
 		self.dictionary_list = dictionary
 		self.scrambles = []
@@ -15,7 +14,7 @@ class Scramble:
 	def get_matches(self, longString: str)-> int:
 		for d in self.dictionary_list:
 			if d in longString:
-				self.matches = self.matches + 1
+				self.matches += 1
 		return self.matches
 
 	def generateScrambles(self, dictionary: str)-> list:
