@@ -12,7 +12,7 @@ def execute():
 
     scramble_file.file.close()
 
-    ScrambleFile().__init__
+    ScrambleFile().__init__()
 
     scramble_file.open(scramble_file.input_file)
     input_file_list = scramble_file.to_list()
@@ -26,4 +26,3 @@ def execute():
 
 
 execute()
-    #matches = scramble.get_matches("aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbt")
