@@ -7,17 +7,29 @@ class Scramble:
 		self.dictionary_list = dictionary
 		self.scrambles = []
 		self.matches = 0
+		logging.info("Dictionary List:" )
+		logging.debug(self.dictionary_list)
 
 		for d in self.dictionary_list:
 			self.scrambles.extend(self.generateScrambles(d))
 
+		logging.info("Generated scrambles:" )
+		logging.debug(self.dictionary_list)
+
 		self.orchistrate_generated_scrambles()
+
+		logging.info("Dictionary has been merged with non-duplicated scrambles: " )
+		logging.debug(self.dictionary_list)
 
 	def get_matches(self, longString: str)-> int:
 		self.matches = 0
+		list = []
 		for d in self.dictionary_list:
 			if d in longString:
 				self.matches += 1
+				list.append(d)
+		logging.info(f"{self.matches} matches found for input {longString}")
+		logging.debug(list)
 		return self.matches
 
 	def generateScrambles(self, dictionary: str)-> list:
