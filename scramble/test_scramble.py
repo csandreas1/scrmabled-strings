@@ -8,7 +8,7 @@ class TestingScramble(unittest.TestCase):
         matches = scramble.get_matches("aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbt")
         self.assertEqual(matches, 4)
 
-    def test_get_result(self):
+    def test_get_matching_scrambles(self):
         scramble = Scramble(["axpaj", "apxaj", "dnrbt", "pjxdn", "abd", "whatever"])
         scramble.get_matches("aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbt")
 
