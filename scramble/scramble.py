@@ -12,11 +12,11 @@ class Scramble:
 
 	def is_anagram(self, str1, str2)-> bool:
 		letter_length = len(str1)
-		cachekey = (str2, str1)
-		if cachekey not in self.anagrams:
+		cache_key = (str2, str1)
+		if cache_key not in self.anagrams:
 			# build the list for that letter length
-			self.anagrams[cachekey] = [sorted(str2[x:x+letter_length]) for x in range(len(str2)-letter_length+1)]
-		return (sorted(str1) in self.anagrams[cachekey])
+			self.anagrams[cache_key] = [sorted(str2[x:x+letter_length]) for x in range(len(str2)-letter_length+1)]
+		return (sorted(str1) in self.anagrams[cache_key])
 
 	def get_matches(self, long_string: str)-> int:
 		self.matches = 0
