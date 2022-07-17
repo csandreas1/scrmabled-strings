@@ -14,5 +14,12 @@ class TestingScramble(unittest.TestCase):
 
         self.assertEqual(scramble.scrambles, ["axpaj", "apxaj", "dnrbt", "pjxdn"])
 
+    def test_get_matching_scrambles_2(self):
+        scramble = Scramble(["sparta", "spatra", "this", "whatever"])
+        scramble.get_matches("thisissparta")
+
+        self.assertEqual(scramble.scrambles, ["sparta", "spatra", "this"])
+
+
 if __name__ == "__main__":
     unittest.main()
