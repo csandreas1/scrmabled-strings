@@ -11,16 +11,16 @@ class Scramble:
 		logging.debug(self.dictionary_list)
 
 	def is_anagram(self, str1, str2)-> bool:
-		lettercount = len(str1)
-		if lettercount not in self.anagrams:
-			# build the list for that letter length
-			self.anagrams[lettercount] = [sorted(str2[x:x+lettercount]) for x in range(len(str2)-lettercount)]
-		return (sorted(str1) in self.anagrams[lettercount])
+		letter_length = len(str1)
+		self.anagrams = {}
+		# build the list for that letter length
+		self.anagrams[letter_length] = [sorted(str2[x:x+letter_length]) for x in range(len(str2)-letter_length)]
+		return (sorted(str1) in self.anagrams[letter_length])
 
 	def get_matches(self, long_string: str)-> int:
 		self.matches = 0
-		self.anagrams = {}
 		self.scrambles = []
+
 		for l in self.dictionary_list:
 			if self.is_anagram(l, long_string):
 				self.scrambles += [l]
