@@ -21,13 +21,13 @@ docker run -it --rm --name my-running-app  scrmabledstrings
 ```
 
 
-Verify the installation by checking the output, you should see the Python version.
+Verify the installation by checking the output within the container, you should see the Python version.
 
 E.g.
-```
+
 Python 3.10.5 (main, Jul 12 2022, 11:32:11) [GCC 10.2.1 20210110] on linux
 Type "help", "copyright", "credits" or "license" for more information.
-```
+
 
 ## Running module
 Inside the scramble folder run python3 main.py.
