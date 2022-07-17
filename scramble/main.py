@@ -15,6 +15,6 @@ def execute():
             c += 1
             print(f"Case #{c}: {str(scramble.matches)}")
 
-    logging.info("Execution ended succesfully...")
+    logging.info("Execution ended successfully...")
 
 execute()

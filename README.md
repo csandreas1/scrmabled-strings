@@ -55,7 +55,7 @@ cd project_directory/scramble
 python3 main.py
 ```
 
-## Samle output
+## Sample output
     Case #1: 18
 
 ## Sample logging
