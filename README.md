@@ -18,20 +18,7 @@ counted are this (original version) and tihs (scrambled version). tsih , siht an
 are not valid since they do not start with t and end with s . Also, tis , tiss , and thiss are not
 scrambled forms, because they are not reorderings of the original set of letters.
 
-## Loger example output
-```
-2022-07-17 09:34:05,490 Execution started...
-2022-07-17 09:34:05,490 Dictionary List:
-2022-07-17 09:34:05,491 ['axpaj', 'apxaj', 'dnrbt', 'pjxdn', 'abd']
-2022-07-17 09:34:05,491 Generated scrambles:
-2022-07-17 09:34:05,491 ['axapj', 'apaxj', 'aaxpj', 'aapxj', 'aaxpj', 'aapxj', 'axapj', 'apaxj', 'apaxj', 'axapj', 'aapxj', 'aaxpj', 'aapxj', 'aaxpj', 'apaxj', 'axapj', 'dnbrt', 'drnbt', 'drbnt', 'dbnrt', 'dbrnt', 'pjdxn', 'pxjdn', 'pxdjn', 'pdjxn', 'pdxjn']
-2022-07-17 09:34:05,491 Dictionary list with scrambles:
-2022-07-17 09:34:05,491 ['axpaj', 'apxaj', 'dnrbt', 'pjxdn', 'abd', 'axapj', 'apaxj', 'aaxpj', 'aapxj', 'dnbrt', 'drnbt', 'drbnt', 'dbnrt', 'dbrnt', 'pjdxn', 'pxjdn', 'pxdjn', 'pdjxn', 'pdxjn']
-2022-07-17 09:34:05,491 18 matches found for input 'aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbt'
-2022-07-17 09:34:05,491 ['dnrbt', 'dnbrt', 'drnbt', 'drbnt', 'dbnrt', 'dbrnt', 'aapxj', 'axpaj', 'apxaj', 'axapj', 'apaxj', 'aaxpj', 'pxjdn', 'pjxdn', 'pjdxn', 'pxdjn', 'pdjxn', 'pdxjn']
-2022-07-17 09:34:05,491 Execution ended succesfully...
 
-```
 
 ## Environment setup
 
@@ -68,10 +55,23 @@ cd project_directory/scramble
 python3 main.py
 ```
 
-## Limits
-- No two words in the dictionary are the same.
-- Each word in the dictionary is between 2 and 105 letters long, inclusive.
-- The sum of lengths of all words in the dictionary does not exceed 105.
+## Samle output
+    Case #1: 18
+
+## Sample logging
+```
+2022-07-17 09:34:05,490 Execution started...
+2022-07-17 09:34:05,490 Dictionary List:
+2022-07-17 09:34:05,491 ['axpaj', 'apxaj', 'dnrbt', 'pjxdn', 'abd']
+2022-07-17 09:34:05,491 Generated scrambles:
+2022-07-17 09:34:05,491 ['axapj', 'apaxj', 'aaxpj', 'aapxj', 'aaxpj', 'aapxj', 'axapj', 'apaxj', 'apaxj', 'axapj', 'aapxj', 'aaxpj', 'aapxj', 'aaxpj', 'apaxj', 'axapj', 'dnbrt', 'drnbt', 'drbnt', 'dbnrt', 'dbrnt', 'pjdxn', 'pxjdn', 'pxdjn', 'pdjxn', 'pdxjn']
+2022-07-17 09:34:05,491 Dictionary list with scrambles:
+2022-07-17 09:34:05,491 ['axpaj', 'apxaj', 'dnrbt', 'pjxdn', 'abd', 'axapj', 'apaxj', 'aaxpj', 'aapxj', 'dnbrt', 'drnbt', 'drbnt', 'dbnrt', 'dbrnt', 'pjdxn', 'pxjdn', 'pxdjn', 'pdjxn', 'pdxjn']
+2022-07-17 09:34:05,491 18 matches found for input 'aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbt'
+2022-07-17 09:34:05,491 ['dnrbt', 'dnbrt', 'drnbt', 'drbnt', 'dbnrt', 'dbrnt', 'aapxj', 'axpaj', 'apxaj', 'axapj', 'apaxj', 'aaxpj', 'pxjdn', 'pjxdn', 'pjdxn', 'pxdjn', 'pdjxn', 'pdxjn']
+2022-07-17 09:34:05,491 Execution ended succesfully...
+
+```
 
 ## Running Tests
 
@@ -83,3 +83,8 @@ You can either run tests manually or configure your IDE/ editor
 cd project_directory
 python -m unittest discover
 ```
+
+## Limits
+- No two words in the dictionary are the same.
+- Each word in the dictionary is between 2 and 105 letters long, inclusive.
+- The sum of lengths of all words in the dictionary does not exceed 105.
