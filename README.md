@@ -33,11 +33,11 @@ scrambled forms, because they are not reorderings of the original set of letters
 
 ```
 
-## Docker
+## Environment setup
 
-Install Python inside docker container.
+Install Python inside a docker container.
 
-Within the project root directory, run the following commands:
+Within the project root directory, run the following commands
 ```sh
 docker build --pull --rm -f "Dockerfile" -t scrmabledstrings:latest "."
 ```
@@ -52,15 +52,15 @@ docker run -it --rm --name my-running-app  scrmabledstrings
 ```
 
 
-Verify the installation by checking the output, you should see the Python version.
+Verify the installation by checking the output, you should see the latest Python 3 version.
 
 E.g.
-```
+
 Python 3.10.5 (main, Jul 12 2022, 11:32:11) [GCC 10.2.1 20210110] on linux
 Type "help", "copyright", "credits" or "license" for more information.
-```
 
-## Running module
+
+## Running the module
 Inside the scramble folder run python3 main.py.
 Notice that a log file will be generated. Also you can check the console for the output
 ```
@@ -68,8 +68,8 @@ cd project_directory/scramble
 python3 main.py
 ```
 
-## Running tests
-You can either run tests manually or configure your IDE.
+## Running the tests
+You can either run tests manually or configure your IDE/ editor
 
 [Read more](https://docs.python.org/3/library/unittest.html#test-discovery) on python unittest
 
