@@ -60,16 +60,12 @@ python3 main.py
 
 ## Sample logging
 ```
-2022-07-17 09:34:05,490 Execution started...
-2022-07-17 09:34:05,490 Dictionary List:
-2022-07-17 09:34:05,491 ['axpaj', 'apxaj', 'dnrbt', 'pjxdn', 'abd']
-2022-07-17 09:34:05,491 Generated scrambles:
-2022-07-17 09:34:05,491 ['axapj', 'apaxj', 'aaxpj', 'aapxj', 'aaxpj', 'aapxj', 'axapj', 'apaxj', 'apaxj', 'axapj', 'aapxj', 'aaxpj', 'aapxj', 'aaxpj', 'apaxj', 'axapj', 'dnbrt', 'drnbt', 'drbnt', 'dbnrt', 'dbrnt', 'pjdxn', 'pxjdn', 'pxdjn', 'pdjxn', 'pdxjn']
-2022-07-17 09:34:05,491 Dictionary list with scrambles:
-2022-07-17 09:34:05,491 ['axpaj', 'apxaj', 'dnrbt', 'pjxdn', 'abd', 'axapj', 'apaxj', 'aaxpj', 'aapxj', 'dnbrt', 'drnbt', 'drbnt', 'dbnrt', 'dbrnt', 'pjdxn', 'pxjdn', 'pxdjn', 'pdjxn', 'pdxjn']
-2022-07-17 09:34:05,491 18 matches found for input 'aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbt'
-2022-07-17 09:34:05,491 ['dnrbt', 'dnbrt', 'drnbt', 'drbnt', 'dbnrt', 'dbrnt', 'aapxj', 'axpaj', 'apxaj', 'axapj', 'apaxj', 'aaxpj', 'pxjdn', 'pjxdn', 'pjdxn', 'pxdjn', 'pdjxn', 'pdxjn']
-2022-07-17 09:34:05,491 Execution ended succesfully...
+2022-07-17 18:36:08,658 Execution started...
+2022-07-17 18:36:08,659 Dictionary List:
+2022-07-17 18:36:08,659 ['axpaj', 'apxaj', 'dnrbt', 'pjxdn', 'abd']
+2022-07-17 18:36:08,659 4 matches found for input 'aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbt'
+2022-07-17 18:36:08,659 ['axpaj', 'apxaj', 'dnrbt', 'pjxdn']
+2022-07-17 18:36:08,659 Execution ended succesfully...
 ```
 
 ## Running Tests
