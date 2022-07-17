@@ -40,7 +40,7 @@ python3 main.py
 ## Running tests
 You can either run tests manually or configure your IDE.
 
-[Read more](https://docs.python.org/3/library/unittest.html#test-discovery) on python unittest
+[Read more](https://docs.python.org/3/library/unittest.html#test-discovery) on python unittest test discovery
 
 ```
 cd project_directory
