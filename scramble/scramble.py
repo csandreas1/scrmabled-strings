@@ -25,21 +25,18 @@ class Scramble:
 	def get_matches(self, longString: str)-> int:
 		self.matches = 0
 		matches = []
-		dictionary_scrambles_advanced = list(map(self.get_first_and_last_character, self.dictionary_with_scrambles))
-		# COMMENT: 'axpaj' is not matching in its scrumbled version 'aapxj'...
-		#This is wrong
+		dictionary_scrambles_advanced = list(map(self.get_advanced_data, self.dictionary_with_scrambles))
+
 		for d in self.dictionary_with_scrambles:
 			if d in longString:
 				self.matches += 1
 				matches.append(d)
-				#check for scrambled matches
+				#advanced matching checks
 				for data in dictionary_scrambles_advanced:
-					if data[0] in self.dictionary_list \
-						and data[0] not in matches \
+					if data[0] not in matches \
 							and (d[0] + d[-1] == data[1] and len(d) == data[2]):
 						self.matches += 1
 						matches.append(data[0])
-
 
 		logging.info(f"{self.matches} matches found for input '{longString}'")
 		logging.debug(matches)
@@ -61,5 +58,5 @@ class Scramble:
 		#merge scrumble list into the dictionary list
 		self.dictionary_with_scrambles = list(itertools.chain(self.dictionary_list, self.scrambles))
 
-	def get_first_and_last_character(self, string:str)-> list:
+	def get_advanced_data(self, string:str)-> list:
 		return [string, string[0] + string[-1], len(string)]
