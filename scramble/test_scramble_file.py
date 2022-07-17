@@ -14,6 +14,17 @@ class TestingScrambleFileData(unittest.TestCase):
         self.assertIsInstance(input_data, list)
         scramble_file.file.close()
 
+    def test_dictionary_limitations(self):
+        scramble_file = ScrambleFile()
+        scramble_file.CONST_MAX_DICTIONARY_LENGTH = 0
+
+        with self.assertRaises(ValueError):
+            scramble_file.__init__()
+
+        scramble_file.CONST_MIN_DICTIONARY_LENGTH = 500
+        with self.assertRaises(ValueError):
+            scramble_file.__init__()
+
 if __name__ == '__main__':
     scramble_file = ScrambleFile()
     unittest.main()
