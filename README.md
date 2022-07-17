@@ -68,7 +68,13 @@ cd project_directory/scramble
 python3 main.py
 ```
 
-## Running the tests
+## Limits
+- No two words in the dictionary are the same.
+- Each word in the dictionary is between 2 and 105 letters long, inclusive.
+- The sum of lengths of all words in the dictionary does not exceed 105.
+
+## Running Tests
+
 You can either run tests manually or configure your IDE/ editor
 
 [Read more](https://docs.python.org/3/library/unittest.html#test-discovery) on python unittest
