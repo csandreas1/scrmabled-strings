@@ -14,7 +14,7 @@ class Scramble:
 		letter_length = len(str1)
 		cache_key = (str2, str1)
 		if cache_key not in self.anagrams:
-			# build the list for that letter length
+			# Use list comprehension to build the list for that letter length
 			self.anagrams[cache_key] = [sorted(str2[x:x+letter_length]) for x in range(len(str2)-letter_length+1)]
 		return (sorted(str1) in self.anagrams[cache_key])
 
