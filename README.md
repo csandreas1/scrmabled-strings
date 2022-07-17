@@ -70,17 +70,15 @@ python3 main.py
 2022-07-17 09:34:05,491 18 matches found for input 'aapxjdnrbtvldptfzbbdbbzxtndrvjblnzjfpvhdhhpxjdnrbt'
 2022-07-17 09:34:05,491 ['dnrbt', 'dnbrt', 'drnbt', 'drbnt', 'dbnrt', 'dbrnt', 'aapxj', 'axpaj', 'apxaj', 'axapj', 'apaxj', 'aaxpj', 'pxjdn', 'pjxdn', 'pjdxn', 'pxdjn', 'pdjxn', 'pdxjn']
 2022-07-17 09:34:05,491 Execution ended succesfully...
-
 ```
 
 ## Running Tests
 
 You can either run tests manually or configure your IDE/ editor
 
-[Read more](https://docs.python.org/3/library/unittest.html#test-discovery) on python unittest
+[Read more](https://docs.python.org/3/library/unittest.html#test-discovery) on Python Unittest Test Discovery
 
-```
-cd project_directory
+```cd project_directory
 python -m unittest discover
 ```
 
