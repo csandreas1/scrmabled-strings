@@ -10,7 +10,7 @@ class ScrambleFile(FileHandler):
     dictionary_data = []
     input_data = []
 
-    def __init__(self, directory: str = "") -> None:
+    def __init__(self, directory: str = "")-> None:
         super().__init__(BASE_DIR / "scramble")
         super().open(self.dictionary_file)
         self.dictionary_data = self.to_list()
