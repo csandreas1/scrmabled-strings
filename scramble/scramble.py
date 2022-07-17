@@ -12,7 +12,7 @@ class Scramble:
 		logging.debug(self.dictionary_list)
 
 
-	def is_anagram(self, str1, str2):
+	def is_anagram(self, str1, str2)-> bool:
 		lettercount = len(str1)
 		if lettercount not in self.anagrams:
 			# build the list for that letter length
