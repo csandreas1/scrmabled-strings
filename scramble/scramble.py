@@ -11,7 +11,6 @@ class Scramble:
 		logging.info("Dictionary List:")
 		logging.debug(self.dictionary_list)
 
-
 	def is_anagram(self, str1, str2)-> bool:
 		lettercount = len(str1)
 		if lettercount not in self.anagrams:
