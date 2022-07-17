@@ -19,6 +19,8 @@ class Scramble:
 
 	def get_matches(self, long_string: str)-> int:
 		self.matches = 0
+		self.anagrams = {}
+		self.scrambles = []
 		for l in self.dictionary_list:
 			if self.is_anagram(l, long_string):
 				self.scrambles += [l]
