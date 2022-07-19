@@ -84,4 +84,4 @@ python -m unittest discover
 - The sum of lengths of all words in the dictionary does not exceed 105.
 
 ## Future works
-- Python build in lists can be optimized by using Deque (Doubly Ended Queue) from the collections module. Deque is the optimized list for quicker append and pop operations from both sides of the container. It provides O(1) time complexity for append and pop operations as compared to list with O(n) time complexity.
+- Python built-in lists can be optimized by replacing them with Deque (Doubly Ended Queue) from the collections module. Deque is the optimized list for quicker append and pop operations from both sides of the container. It provides O(1) time complexity for append and pop operations as compared to list with O(n) time complexity.
