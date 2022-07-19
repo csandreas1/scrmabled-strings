@@ -82,3 +82,6 @@ python -m unittest discover
 - No two words in the dictionary are the same.
 - Each word in the dictionary is between 2 and 105 letters long, inclusive.
 - The sum of lengths of all words in the dictionary does not exceed 105.
+
+## Future works
+- Python build in lists can be optimized by using Deque (Doubly Ended Queue) from the collections module. Deque is the optimized list for quicker append and pop operations from both sides of the container. It provides O(1) time complexity for append and pop operations as compared to list with O(n) time complexity.
